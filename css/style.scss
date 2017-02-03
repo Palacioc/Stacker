@@ -1,0 +1,75 @@
+$scale : 10px;
+$dark-color : black;
+$light-color: #f2f2f2;
+$card-color: white;
+$border-radiuses: 5px;
+$card-padding: 10px;
+$card-margin:10px;
+
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: Open Sans, sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-size: 2.0rem;
+}
+
+.container {
+  border: 1px solid black;
+  margin: 30px auto;
+  width: 800px;
+}
+
+.cell {
+  background-size: contain;
+  box-sizing: border-box;
+  float: left;
+  height: 2 * $scale;
+  width: 1.6 * $scale;
+}
+
+.board {
+  background-color: white;
+}
+
+.moving-men{
+  background-color: black;
+}
+
+.still-men{
+  background-color: grey;
+  // background-image: url("../images/img1.png");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+}
+
+.fade-background{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.5);
+  z-index: 2;
+  font-size: 30px;
+}
+
+.card{
+  border: 3px solid $dark-color;
+  border-radius: $border-radiuses;
+  background-color: $card-color;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: $card-padding;
+}
+
+.hidden{
+  display: none;
+}
